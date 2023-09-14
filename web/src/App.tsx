@@ -1,7 +1,28 @@
+import { Button } from "./components/ui/button";
+import { Separator } from "./components/ui/separator";
+import {Github} from 'lucide-react'
+
 export function App() {
 
   return (
-    <h1>hello</h1>
+    <main className="min-h-screen flex flex-col">
+      <header className="px-6 py-3 flex items-center justify-between border-b">
+        <h1 className="text-xl font-bold">up.ai</h1>
+
+        <div className="flex items-center gap-3">
+          <span className="text-sm text-muted-foreground">
+            Desenvolvido por ErildoJS com 💜 no NLW da Rocketseat
+          </span>
+
+          <Separator orientation="vertical" className="h-6"/>
+
+          <Button variant="outline">
+            <Github className="w-4 h-4 mr-2"/>
+            Github
+          </Button>
+        </div>
+      </header>
+    </main>
   )
 }
 
