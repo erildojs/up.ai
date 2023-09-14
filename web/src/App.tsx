@@ -12,7 +12,7 @@ export function App() {
 
         <div className="flex items-center gap-3">
           <span className="text-sm text-muted-foreground">
-            Desenvolvido por <a className="text-muted-foreground">ErildoJS</a> com 💜 no NLW da Rocketseat
+            Desenvolvido por <a className="text-muted-foreground" href="https://github.com/erildojs">ErildoJS</a> com 💜 no NLW da Rocketseat
           </span>
 
           <Separator orientation="vertical" className="h-6"/>
