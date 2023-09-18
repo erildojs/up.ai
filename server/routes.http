@@ -15,3 +15,13 @@ Content-Type: application/json
 {
   "prompt": "tory lanez, love"
 }
+
+###
+POST http://localhost:3333/ai/complete
+Content-Type: application/json
+
+{
+  "videoId": "826a4439-3614-4e2e-9a09-5c165ce9063f",
+  "temperature": 0.5,
+  "template": "Gere um resumo sucinto da transcricao do video informada a seguir: '''{transcription}'''"
+}
