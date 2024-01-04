@@ -1,6 +1,6 @@
 import { Label } from '@radix-ui/react-label'
 import { Separator } from '@radix-ui/react-separator'
-import {Github, FileVideo, Upload, Wand2} from 'lucide-react'
+import {FileVideo, Upload} from 'lucide-react'
 import { Textarea } from './ui/textarea'
 import { Button } from './ui/button'
 
