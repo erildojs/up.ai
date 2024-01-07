@@ -3,9 +3,8 @@ import {z} from 'zod'
 import {prisma} from '../lib/prisma'
 import { createReadStream } from "node:fs";
 import { openai } from "../lib/openai";
-export async function createTranscriptionRoute(app: FastifyInstance) {
-  
 
+export async function createTranscriptionRoute(app: FastifyInstance) {
   app.post('/videos/:videoId/transcription', async (request, reply) => {
     const paramsSchema = z.object({
       videoId: z.string().uuid()
@@ -28,15 +27,6 @@ export async function createTranscriptionRoute(app: FastifyInstance) {
       temperature: 0,
       prompt
     })
-    const transcription = response.text
-    await prisma.video.update({
-      where: {
-        id: videoId
-      },
-      data: {
-        transcription
-      }
-    })
-    return {transcription}
+     return response.text
   })
 }

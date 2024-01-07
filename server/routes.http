@@ -9,7 +9,9 @@ Content-Type: video/mpeg
 ------WebKitFormBoundary7MA4YWxkTrZu0gW--
 
 ###
-POST http://localhost:3333/videos/826a4439-3614-4e2e-9a09-5c165ce9063f/transcription
+
+
+POST http://localhost:3333/videos/040c10e1-4e68-4487-8872-975f4889a357/transcription
 Content-Type: application/json
 
 {
@@ -21,7 +23,7 @@ POST http://localhost:3333/ai/complete
 Content-Type: application/json
 
 {
-  "videoId": "826a4439-3614-4e2e-9a09-5c165ce9063f",
+  "videoId": "2895b11f-fca3-4543-82b7-f4d922deb14c",
   "temperature": 0.5,
   "template": "Gere um resumo sucinto da transcricao do video informada a seguir: '''{transcription}'''"
 }
