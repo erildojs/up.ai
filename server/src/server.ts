@@ -6,9 +6,9 @@ import { generateAiCompletionRoute } from './routes/generate-ai-completion'
 import {fastifyCors} from '@fastify/cors'
 
 const app = fastify()
-app.register(fastifyCors, {
-  origin: '*'
-})
+// app.register(fastifyCors, {
+//   origin: '*'
+// })
 
 app.register(getAllPromptsRoute)
 app.register(uploadVideoRoute)
