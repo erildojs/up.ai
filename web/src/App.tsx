@@ -39,7 +39,7 @@ export function App() {
 
           <Button variant="outline">
             <Github className="w-4 h-4 mr-2"/>
-            Github
+            <a href="https://github.com/erildojs/erildojs">Github</a>
           </Button>
         </div>
       </header>
