@@ -1,3 +1,6 @@
+GET http://localhost:3333/prompts
+
+###
 POST http://localhost:3333/videos
 Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW
 
@@ -10,7 +13,7 @@ Content-Type: audio/mpeg
 
 ###
 
-POST http://localhost:3333/videos/c216518e-f833-4873-ae92-ebb865b84157/transcription
+POST http://localhost:3333/videos/bb933c52-ed3d-49d5-beaf-1e70def4bb95/transcription
 Content-Type: application/json
 
 {

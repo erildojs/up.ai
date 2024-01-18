@@ -22,7 +22,9 @@ export function PromptSelect(props: PromptSelectProps) {
 
     function handlePromptSelected(promptId: string) {
         const selectedPrompt = prompts?.find(prompt => prompt.id === promptId)
-        if(!selectedPrompt) return
+        if(!selectedPrompt) {
+            return
+        }
         props.onPromptSelected(selectedPrompt.template)
     }
 
@@ -38,6 +40,6 @@ export function PromptSelect(props: PromptSelectProps) {
                         )
                     })}
                 </SelectContent>
-              </Select>
+        </Select>
     )
 }

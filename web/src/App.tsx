@@ -21,7 +21,7 @@ export function App() {
       temperature
     },
     headers: {
-      'Content-type': 'application/json'
+      'Content-Type': 'application/json'
     }
   })
 
@@ -68,7 +68,7 @@ export function App() {
             </div>
 
             <div className="space-y-2">
-              <Label>Models</Label>
+              <Label>Modelo</Label>
               <Select disabled defaultValue="gpt3.5">
                 <SelectTrigger>
                   <SelectValue />

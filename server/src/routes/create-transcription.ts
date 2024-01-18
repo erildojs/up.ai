@@ -14,7 +14,7 @@ export async function createTranscriptionRoute(app: FastifyInstance) {
       prompt: z.string()
     })
     const {prompt} = bodySchema.parse(request.body)
-    const video = await prisma.video.findFirstOrThrow({
+    const video = await prisma.video.findUniqueOrThrow({
       where: {id: videoId}
     })
     const videoPath = video.path
@@ -27,6 +27,18 @@ export async function createTranscriptionRoute(app: FastifyInstance) {
       temperature: 0,
       prompt
     })
-     return response.text
+     const transcription = response.text
+     await prisma.video.update({
+      where: {
+        id: videoId,
+      },
+      data: {
+        transcription,
+      }
+    })
+
+    return {
+      transcription,
+    }
   })
 }

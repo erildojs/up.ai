@@ -24,8 +24,8 @@
     "@fastify/multipart": "^7.7.3",
     "@prisma/client": "^5.8.1",
     "ai": "^2.2.31",
-    "fastify": "^4.25.2",
-    "openai": "^4.24.2",
+    "fastify": "^4.23.0",
+    "openai": "^4.6.0",
     "zod": "^3.22.4"
   }
 }
