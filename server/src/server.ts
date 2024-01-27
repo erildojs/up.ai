@@ -8,7 +8,7 @@ import { ZodError } from 'zod'
 
 const app = fastify()
 app.register(fastifyCors, {
-  origin: true
+  origin: '*'
 })
 
 app.register(getAllPromptsRoute)

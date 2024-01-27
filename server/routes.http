@@ -14,6 +14,7 @@ Content-Type: audio/mpeg
 ###
 
 POST http://localhost:3333/videos/9e643d9c-dbac-4d7f-8fa1-615939e63771/transcription
+Access-Control-Allow-Origin: '*'
 Content-Type: application/json
 
 {
